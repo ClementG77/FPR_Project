@@ -1,15 +1,15 @@
-import logo from './logo.svg';
-import Footer from './components/footer';
-import Navbar from './components/navbar';
 import Main from './pages/Main';
 import './App.css';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-function App() {
-  return (
-    <div>
-    <Main />
-    </div>
-  )
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+            <Route path='/' element={<Main/>} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App;
+export default App

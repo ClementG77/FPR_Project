@@ -2,17 +2,17 @@ import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 
 const main = () => {
-const contentPage = () => {
+const ContentPage = () => {
     return (
         <div> <h1>Hello World</h1></div>
     );
   };
   
   return (
-    <div>
+    <div class="bg-blue">
       <Navbar />
-    <contentPage />
-    <Footer />
+      <ContentPage />
+      <Footer />
     </div>
   );
 }
