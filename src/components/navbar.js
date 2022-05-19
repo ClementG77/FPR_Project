@@ -1,5 +1,5 @@
 import WalletCardEthers from './metamask';
-
+import logo from '../images/logo.png';
 
 function collapse(){
     document.getElementById("mobile-menu-4").classList.toggle("hidden")
@@ -13,7 +13,9 @@ const navbar = () => {
       <div class="bg-stone-800">
         <nav class="bg-stone-600 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-stone-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="" class="block py-2 pr-4 pl-3 text-white">Launchor</a>
+        <a class="w-52 " href="">
+          <img src={logo} class="object-contain  " alt="Launchor"></img>
+        </a>
         <div class="flex md:order-2">
             <WalletCardEthers />
             <button data-collapse-toggle="mobile-menu-4" onClick={collapse}  type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-4" aria-expanded="false">
