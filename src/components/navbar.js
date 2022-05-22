@@ -10,10 +10,10 @@ function dropdown(){
 
 const navbar = () => {
     return (
-      <div class="bg-stone-800">
-        <nav class="bg-stone-600 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-stone-800">
+      <div class="bg-black">
+        <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a class="w-52 " href="">
+        <a class="w-36 " href="">
           <img src={logo} class="object-contain  " alt="Launchor"></img>
         </a>
         <div class="flex md:order-2">
