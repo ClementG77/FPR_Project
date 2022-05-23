@@ -8,14 +8,19 @@ const WalletCardEthers = () => {
 	const [connButtonText, setConnButtonText] = useState('Connect Wallet');
 	const [provider, setProvider] = useState(null);
 
+
+  useEffect(() => {
+
+    if (localStorage.getItem('adress') != null) {
+      connectWalletHandler()
+    }
+  })
  const checkChain = async ()=> {
   const { chainId } = await new ethers.providers.Web3Provider(window.ethereum).getNetwork()
   if (chainId !== 80001) {
-    console.log('hellos')
     switchChain()
   }
-  console.log(chainId) // 42
-}
+  }
 
 const switchChain = async () => {
   await window.ethereum.request({
@@ -44,9 +49,11 @@ const switchChain = async () => {
 			.then(result => {
 				setConnButtonText('Connected');
 				setDefaultAccount(result[0]);
+        localStorage.setItem("adress", JSON.stringify(result[0]));
 			})
 			.catch(error => {
 				setErrorMessage(error.message);
+        localStorage.clear();
 			});
 
 		} else if (!window.ethereum){

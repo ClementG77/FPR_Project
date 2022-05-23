@@ -3,6 +3,32 @@ import Navbar from '../components/navbar';
 import rocket from '../images/rocket.png';
 
 const main = () => {
+
+  function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
+
+  const client = require("@mailchimp/mailchimp_marketing");
+
+  client.setConfig({
+    apiKey: "abc6626f3b199759e5f0d76bf229e47d-us17",
+    server: "us17",
+  });
+
+  const run = async () => {
+    const response = await client.lists.getAllLists();
+    console.log(response);
+  };
+
+  const newsletter = async () => {
+    let email = document.getElementById('email').value;
+    if (validateEmail(email) === false) {
+      run()
+    }
+    console.log(email);
+  }
+
   const ContentPage = () => {
     return (
       <div class="bg-black">
@@ -24,7 +50,7 @@ const main = () => {
               </main>
             </div>
             <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-              <img class="h-96 w-96 object-cover mx-auto my-12 "
+              <img class=" animate-wiggle h-96 w-96 object-cover mx-auto my-12 "
                 src={rocket}
                 alt=""></img>
             </div>
@@ -42,19 +68,19 @@ const main = () => {
                         class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                         src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
                         alt="blog"></img>
-                        <div class="p-6 h-3/5">
-                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                          </h2>
-                          <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                          <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
-                          <div class="relative flex items-center flex-wrap ">
-                            <button
-                              class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
-                            <div class="absolute right-0 font-bold">Aim : 20000$</div>
-                          </div>
+                      <div class="p-6 h-3/5">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                        </h2>
+                        <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                        <div class="relative flex items-center flex-wrap ">
+                          <button
+                            class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
+                          <div class="absolute right-0 font-bold">Aim : 20000$</div>
                         </div>
+                      </div>
                     </div>
                   </div>
                   <div class="p-4 md:w-1/3">
@@ -63,18 +89,18 @@ const main = () => {
                         class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                         src="https://images.unsplash.com/photo-1624628639856-100bf817fd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8M2QlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
                         alt="blog"></img>
-                        <div class="p-6 h-3/5">
-                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                          </h2>
-                          <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                          <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Photo booth fam kinfolk cold-pressed sriracha
-                            leggings jianbing microdosing tousled waistcoat.</p>
-                          <div class="relative flex items-center flex-wrap">
-                            <button
-                              class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
-                            <div class="absolute right-0 font-bold">Aim : 5000$</div>
-                          </div>
+                      <div class="p-6 h-3/5">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                        </h2>
+                        <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Photo booth fam kinfolk cold-pressed sriracha
+                          leggings jianbing microdosing tousled waistcoat.</p>
+                        <div class="relative flex items-center flex-wrap">
+                          <button
+                            class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                          <div class="absolute right-0 font-bold">Aim : 5000$</div>
                         </div>
+                      </div>
                     </div>
                   </div>
                   <div class="p-4 md:w-1/3">
@@ -83,17 +109,17 @@ const main = () => {
                         class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                         src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
                         alt="blog"></img>
-                        <div class="p-6 h-3/5">
-                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                          </h2>
-                          <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                          <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
-                          <div class="relative flex items-center flex-wrap">
-                            <button
-                              class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
-                            <div class="absolute right-0 font-bold">Aim : To change</div>
-                          </div>
+                      <div class="p-6 h-3/5">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                        </h2>
+                        <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
+                        <div class="relative flex items-center flex-wrap">
+                          <button
+                            class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                          <div class="absolute right-0 font-bold">Aim : To change</div>
                         </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -155,24 +181,24 @@ const main = () => {
                   You will receive an email for any new project
                 </p>
                 <div class="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
-                  <input class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white" placeholder="Email Address" />
-                  <button class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Subscribe</button>
+                  <input id="email" class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Email Address" required />
+                  <button onClick={newsletter} class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Subscribe</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-        );
+    );
   };
 
-        return (
-        <div class="bg-blue">
-          <Navbar />
-          <ContentPage />
-          <Footer />
-        </div>
-        );
+  return (
+    <div class="bg-blue">
+      <Navbar />
+      <ContentPage />
+      <Footer />
+    </div>
+  );
 }
 
-        export default main;
+export default main;

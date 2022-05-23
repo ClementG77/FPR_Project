@@ -2,7 +2,7 @@ import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 
 
-const main = () => {
+const projects = () => {
   const ContentPage = () => {
         return (
             <div class="bg-black">
@@ -300,4 +300,4 @@ const main = () => {
         );
 }
 
-        export default main;
+        export default projects;
