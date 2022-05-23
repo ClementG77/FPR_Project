@@ -80,6 +80,11 @@ const main = () => {
                             class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
                           <div class="absolute right-0 font-bold">Aim : 20000$</div>
                         </div>
+                        <div class="my-4">
+                      <div class="w-full bg-white rounded-full dark:bg-white">
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> 50%</div>
+                      </div>
+                    </div>
                       </div>
                     </div>
                   </div>
@@ -100,6 +105,11 @@ const main = () => {
                             class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
                           <div class="absolute right-0 font-bold">Aim : 5000$</div>
                         </div>
+                        <div class="my-4">
+                      <div class="w-full bg-white rounded-full dark:bg-white">
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+                      </div>
+                    </div>
                       </div>
                     </div>
                   </div>
@@ -119,6 +129,11 @@ const main = () => {
                             class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
                           <div class="absolute right-0 font-bold">Aim : To change</div>
                         </div>
+                        <div class="my-4">
+                      <div class="w-full bg-white rounded-full dark:bg-white">
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
+                      </div>
+                    </div>
                       </div>
                     </div>
                   </div>

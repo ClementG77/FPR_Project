@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 
 
 const projects = () => {
-  const ContentPage = () => {
+    const ContentPage = () => {
         return (
             <div class="bg-black">
                 <div class="text-white body-font">
@@ -50,19 +50,24 @@ const projects = () => {
                                                 class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                                                 src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
                                                 alt="blog"></img>
-                                                <div class="p-6 h-3/5">
-                                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                                                    </h2>
-                                                    <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                                                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
-                                                    <div class="relative flex items-center flex-wrap ">
-                                                        <button
-                                                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
-                                                        <div class="absolute right-0 font-bold">Aim : 20000$</div>
+                                            <div class="p-6 h-3/5">
+                                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                                                </h2>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                                                <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                                                <div class="relative flex items-center flex-wrap ">
+                                                    <button
+                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
+                                                    <div class="absolute right-0 font-bold">Aim : 20000$</div>
+                                                </div>
+                                                <div class="my-4">
+                                                    <div class="w-full bg-white rounded-full dark:bg-white">
+                                                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="p-4 md:w-1/3">
@@ -72,18 +77,23 @@ const projects = () => {
                                                 class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                                                 src="https://images.unsplash.com/photo-1624628639856-100bf817fd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8M2QlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
                                                 alt="blog"></img>
-                                                <div class="p-6 h-3/5">
-                                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                                                    </h2>
-                                                    <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                                                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Photo booth fam kinfolk cold-pressed sriracha
-                                                        leggings jianbing microdosing tousled waistcoat.</p>
-                                                    <div class="relative flex items-center flex-wrap">
-                                                        <button
-                                                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
-                                                        <div class="absolute right-0 font-bold">Aim : 5000$</div>
+                                            <div class="p-6 h-3/5">
+                                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                                                </h2>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                                                <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Photo booth fam kinfolk cold-pressed sriracha
+                                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                                <div class="relative flex items-center flex-wrap">
+                                                    <button
+                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                                                    <div class="absolute right-0 font-bold">Aim : 5000$</div>
+                                                </div>
+                                                <div class="my-4">
+                                                    <div class="w-full bg-white rounded-full dark:bg-white">
+                                                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="p-4 md:w-1/3">
@@ -93,17 +103,22 @@ const projects = () => {
                                                 class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                                                 src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
                                                 alt="blog"></img>
-                                                <div class="p-6 h-3/5">
-                                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                                                    </h2>
-                                                    <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                                                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
-                                                    <div class="relative flex items-center flex-wrap">
-                                                        <button
-                                                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
-                                                        <div class="absolute right-0 font-bold">Aim : To change</div>
+                                            <div class="p-6 h-3/5">
+                                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                                                </h2>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                                                <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
+                                                <div class="relative flex items-center flex-wrap">
+                                                    <button
+                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                                                    <div class="absolute right-0 font-bold">Aim : To change</div>
+                                                </div>
+                                                <div class="my-4">
+                                                    <div class="w-full bg-white rounded-full dark:bg-white">
+                                                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 10%"> 10%</div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -125,19 +140,24 @@ const projects = () => {
                                                 class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                                                 src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
                                                 alt="blog"></img>
-                                                <div class="p-6 h-3/5">
-                                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                                                    </h2>
-                                                    <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                                                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
-                                                    <div class="relative flex items-center flex-wrap ">
-                                                        <button
-                                                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
-                                                        <div class="absolute right-0 font-bold">Aim : 20000$</div>
+                                            <div class="p-6 h-3/5">
+                                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                                                </h2>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                                                <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                                                <div class="relative flex items-center flex-wrap ">
+                                                    <button
+                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
+                                                    <div class="absolute right-0 font-bold">Aim : 20000$</div>
+                                                </div>
+                                                <div class="my-4">
+                                                    <div class="w-full bg-white rounded-full dark:bg-white">
+                                                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="p-4 md:w-1/3">
@@ -147,18 +167,23 @@ const projects = () => {
                                                 class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                                                 src="https://images.unsplash.com/photo-1624628639856-100bf817fd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8M2QlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
                                                 alt="blog"></img>
-                                                <div class="p-6 h-3/5">
-                                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                                                    </h2>
-                                                    <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                                                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Photo booth fam kinfolk cold-pressed sriracha
-                                                        leggings jianbing microdosing tousled waistcoat.</p>
-                                                    <div class="relative flex items-center flex-wrap">
-                                                        <button
-                                                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
-                                                        <div class="absolute right-0 font-bold">Aim : 5000$</div>
+                                            <div class="p-6 h-3/5">
+                                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                                                </h2>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                                                <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Photo booth fam kinfolk cold-pressed sriracha
+                                                    leggings jianbing microdosing tousled waistcoat.</p>
+                                                <div class="relative flex items-center flex-wrap">
+                                                    <button
+                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                                                    <div class="absolute right-0 font-bold">Aim : 5000$</div>
+                                                </div>
+                                                <div class="my-4">
+                                                    <div class="w-full bg-white rounded-full dark:bg-white">
+                                                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="p-4 md:w-1/3">
@@ -168,17 +193,22 @@ const projects = () => {
                                                 class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                                                 src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
                                                 alt="blog"></img>
-                                                <div class="p-6 h-3/5">
-                                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                                                    </h2>
-                                                    <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                                                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
-                                                    <div class="relative flex items-center flex-wrap">
-                                                        <button
-                                                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
-                                                        <div class="absolute right-0 font-bold">Aim : To change</div>
+                                            <div class="p-6 h-3/5">
+                                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
+                                                </h2>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                                                <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
+                                                <div class="relative flex items-center flex-wrap">
+                                                    <button
+                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                                                    <div class="absolute right-0 font-bold">Aim : To change</div>
+                                                </div>
+                                                <div class="my-4">
+                                                    <div class="w-full bg-white rounded-full dark:bg-white">
+                                                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 10%"> 10%</div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -289,15 +319,15 @@ const projects = () => {
                 </div>
             </div>
         );
-  };
+    };
 
-        return (
+    return (
         <div class="bg-blue">
-          <Navbar />
-          <ContentPage />
-          <Footer />
+            <Navbar />
+            <ContentPage />
+            <Footer />
         </div>
-        );
+    );
 }
 
-        export default projects;
+export default projects;
