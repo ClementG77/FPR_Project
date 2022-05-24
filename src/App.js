@@ -1,6 +1,7 @@
 import Main from './pages/Main';
 import Projects from './pages/projects';
-import Dashboard from './pages/dashboard'
+import Dashboard from './pages/dashboard';
+import ProjectPage from './pages/projectPage';
 import './App.css';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
@@ -12,6 +13,7 @@ const App = () => {
             <Route path='/' element={<Main/>} />
             <Route path="/projects" element={<Projects/>} exact />
             <Route path="/dashboard" element={<Dashboard/>} exact />
+            <Route path="/projectPage" element={<ProjectPage/>} exact />
             </Routes>
         </BrowserRouter>
     );

@@ -1,6 +1,7 @@
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
-import rocket from '../images/rocket.png';
+import rocket from '../images/logoPixel.png';
+import {Link} from "react-router-dom";
 
 const main = () => {
 
@@ -33,7 +34,8 @@ const main = () => {
     return (
       <div class="bg-black">
         <div class="text-white body-font">
-          <div class="relative bg-gradient-to-r from-black to-zinc-700  overflow-hidden">
+        <div class="container px-5 py-10 mx-auto">
+          <div class="relative overflow-hidden">
             <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
               <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                 <div class="sm:text-center lg:text-left">
@@ -49,11 +51,12 @@ const main = () => {
                 </div>
               </main>
             </div>
-            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-              <img class=" animate-wiggle h-96 w-96 object-cover mx-auto my-12 "
+            <div class="animate-wiggle lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+              <img class="  h-96 w-96 object-cover mx-auto my-12 "
                 src={rocket}
                 alt=""></img>
             </div>
+          </div>
           </div>
           <div class="border-t border-b container px-10 py-10 mx-auto">
             <div class="flex">
@@ -76,13 +79,13 @@ const main = () => {
                           elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
                         <div class="relative flex items-center flex-wrap ">
-                          <button
-                            class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</button>
+                          <Link to="/projectPage"
+                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</Link>
                           <div class="absolute right-0 font-bold">Aim : 20000$</div>
                         </div>
                         <div class="my-4">
                       <div class="w-full bg-white rounded-full dark:bg-white">
-                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"> 50%</div>
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-1/2"> 50%</div>
                       </div>
                     </div>
                       </div>
@@ -102,12 +105,12 @@ const main = () => {
                           leggings jianbing microdosing tousled waistcoat.</p>
                         <div class="relative flex items-center flex-wrap">
                           <button
-                            class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
                           <div class="absolute right-0 font-bold">Aim : 5000$</div>
                         </div>
                         <div class="my-4">
                       <div class="w-full bg-white rounded-full dark:bg-white">
-                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"> 45%</div>
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-2/5"> 40%</div>
                       </div>
                     </div>
                       </div>
@@ -126,12 +129,12 @@ const main = () => {
                         <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
                         <div class="relative flex items-center flex-wrap">
                           <button
-                            class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                            class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
                           <div class="absolute right-0 font-bold">Aim : To change</div>
                         </div>
                         <div class="my-4">
                       <div class="w-full bg-white rounded-full dark:bg-white">
-                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"> 90%</div>
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-11/12"> 90%</div>
                       </div>
                     </div>
                       </div>
@@ -180,7 +183,7 @@ const main = () => {
                     </div>
                     <div class="flex items-center flex-wrap mt-5 ">
                       <button
-                        class="bg-gradient-to-r from-purple-900 to-gray-800 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">More informations</button>
+                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">More informations</button>
                     </div>
                   </main>
                 </div>
