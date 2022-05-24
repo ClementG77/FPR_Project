@@ -82,7 +82,7 @@ const main = () => {
                         </div>
                         <div class="my-4">
                       <div class="w-full bg-white rounded-full dark:bg-white">
-                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> 50%</div>
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"> 50%</div>
                       </div>
                     </div>
                       </div>
@@ -107,7 +107,7 @@ const main = () => {
                         </div>
                         <div class="my-4">
                       <div class="w-full bg-white rounded-full dark:bg-white">
-                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"> 45%</div>
                       </div>
                     </div>
                       </div>
@@ -131,7 +131,7 @@ const main = () => {
                         </div>
                         <div class="my-4">
                       <div class="w-full bg-white rounded-full dark:bg-white">
-                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
+                        <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"> 90%</div>
                       </div>
                     </div>
                       </div>
