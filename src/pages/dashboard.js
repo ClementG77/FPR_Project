@@ -1,5 +1,6 @@
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
+import {Link} from "react-router-dom";
 
 const Dashboard = () => {
     const ContentPage = () => {
@@ -71,7 +72,7 @@ const Dashboard = () => {
                                                             <div class="text-sm leading-5 font-bold text-red-500">NO</div>
                                                         </td>
                                                         <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap border-b border-black">
-                                                            <a href="#" class="text-white hover:text-indigo-900">News</a>
+                                                            <Link to="/news" class="text-white hover:text-indigo-900">News</Link>
                                                         </td>
                                                     </tr>
                                                     <tr>
