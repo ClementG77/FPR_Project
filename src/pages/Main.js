@@ -5,6 +5,17 @@ import { Link } from "react-router-dom";
 
 const main = () => {
 
+  var myEvent = window.attachEvent || window.addEventListener;
+var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make IE7, IE8 compitable
+
+            myEvent(chkevent, function(e) { // For >=IE7, Chrome, Firefox
+                stop()
+            });
+
+  function stop(){
+    clearInterval(x);   
+  }
+
   function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
@@ -31,6 +42,10 @@ const main = () => {
 
     document.getElementById("time").innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
+    document.getElementById("time1").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    document.getElementById("time2").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
       clearInterval(x);
@@ -69,6 +84,34 @@ const main = () => {
               </div>
             </div>
           </div>
+          <div class="px-6 py-6 2xl:container">
+                        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="md:col-span-2 lg:col-span-1">
+                                <div class="py-8 px-6 space-y-6 rounded-xl border border-purple-900 bg-gray-900">
+                                    <h5 class="text-xl text-white text-center">Launches</h5>
+                                    <div class="mt-2 flex justify-center gap-4">
+                                        <h3 class="text-3xl font-bold text-white">99</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 lg:col-span-1">
+                                <div class="py-8 px-6 space-y-6 rounded-xl border border-purple-900 bg-gray-900">
+                                    <h5 class="text-xl text-white text-center">Funds raised</h5>
+                                    <div class="mt-2 flex justify-center gap-4">
+                                        <h3 class="text-3xl font-bold text-white">$150 000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 lg:col-span-1">
+                                <div class="py-8 px-6 space-y-6 rounded-xl border border-purple-900 bg-gray-900">
+                                    <h5 class="text-xl text-white text-center">Number of investors</h5>
+                                    <div class="mt-2 flex justify-center gap-4">
+                                        <h3 class="text-3xl font-bold text-white">2 686</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
           <div class="border-t border-b container px-10 py-10 mx-auto">
             <div class="flex">
               <h1 class="text-2xl tracking-tight font-bold px-10 text-white sm:text-3xl md:text-4xl">Current Projects</h1>
@@ -82,11 +125,11 @@ const main = () => {
                         class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                         src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
                         alt="blog"></img>
-                      <div class="p-6 h-3/5">
+                      <div class="p-6 h-4/6">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
                         </h2>
                         <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
                         <div class="relative flex items-center flex-wrap ">
@@ -94,7 +137,8 @@ const main = () => {
                             class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</Link>
                           <div class="absolute right-0 font-bold">Aim : 20000$</div>
                         </div>
-                        <div class="my-4">
+                        <div class="m-1">Time left: <span class="float-right" id="time1"></span></div>
+                        <div class="mt-4">
                           <div class="w-full bg-white rounded-full dark:bg-white">
                             <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-1/2"> 50%</div>
                           </div>
@@ -108,19 +152,19 @@ const main = () => {
                         class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                         src="https://images.unsplash.com/photo-1624628639856-100bf817fd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8M2QlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
                         alt="blog"></img>
-                      <div class="p-6 h-3/5">
+                      <div class="p-6 h-4/6">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
                         </h2>
                         <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Photo booth fam kinfolk cold-pressed sriracha
+                        <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">Photo booth fam kinfolk cold-pressed sriracha
                           leggings jianbing microdosing tousled waistcoat.</p>
                         <div class="relative flex items-center flex-wrap">
                           <button
                             class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
                           <div class="absolute right-0 font-bold">Aim : 5000$</div>
                         </div>
-                        <div class="m-1">Time left: <span class="float-right" id="time"></span></div>
-                        <div class="my-4">
+                        <div class="m-1">Time left: <span class="float-right" id="time2"></span></div>
+                        <div class="mt-4">
                           <div class="w-full bg-white rounded-full dark:bg-white">
                             <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-2/5"> 40%</div>
                           </div>
@@ -134,17 +178,18 @@ const main = () => {
                         class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                         src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
                         alt="blog"></img>
-                      <div class="p-6 h-3/5">
+                      <div class="p-6 h-4/6">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
                         </h2>
                         <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">200 words max !</p>
+                        <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">200 words max !</p>
                         <div class="relative flex items-center flex-wrap">
                           <button
                             class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
                           <div class="absolute right-0 font-bold">Aim : To change</div>
                         </div>
-                        <div class="my-4">
+                        <div class="m-1">Time left: <span class="float-right" id="time"></span></div>
+                        <div class="mt-4">
                           <div class="w-full bg-white rounded-full dark:bg-white">
                             <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-11/12"> 90%</div>
                           </div>
@@ -156,6 +201,19 @@ const main = () => {
               </div>
             </section>
           </div>
+          <div class="border-b container md:px-32 px-10 py-10 m-auto">
+        <div class="grid grid-cols-3 flex-col">
+          <div class="col-span-3 md:col-span-2 sm:col-span-3 pb-16 md:pb-1">
+                <h1 class="text-3xl tracking-tight font-extrabold text-white sm:text-4xl md:text-5xl">
+                  <span class="block xl:inline">Need help with a project ?</span><br></br>
+                  <span class="block text-purple-900	xl:inline">Contact us !</span>
+                </h1>   
+          </div>  
+          <div class="col-span-3 m-auto md:col-span-1">
+              <Link to="/apply" class="text-2xl bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Apply for a project</Link>
+          </div>
+      </div>
+    </div>
           <div class="container px-10 pt-10 mx-auto">
             <div class="flex pb-5">
               <h1 class="text-2xl tracking-tight font-bold px-10 text-white sm:text-3xl md:text-4xl">Token</h1>
