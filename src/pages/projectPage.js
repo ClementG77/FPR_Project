@@ -4,6 +4,20 @@ import rocket from '../images/logoPixel.png';
 
 
 const projectPage = () => {
+
+  const contractAddress = "";
+
+  const PresaleAbi = [];
+
+  const invest = async () => {
+    document.getElementById('invest').className = "hidden";
+    document.getElementById('buy').className = "visible";
+  }
+
+  const buy = async () => {
+
+  }
+
   const ContentPage = () => {
     return (
       <div class="bg-black">
@@ -31,8 +45,14 @@ const projectPage = () => {
                               <div class="text-left">Funds raised</div>
                               <div class="text-right">10000$</div>
                             </div>
-                            <div class="relative flex items-center flex-wrap ">
+                            <div class=" relative flex items-center flex-wrap ">
+                              <div  id="buy" class=" hidden sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
+                                <input id="number" class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white" placeholder="Value" required />
+                                <button onClick={buy} class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Buy</button>
+                              </div>
                               <button
+                                onClick={invest}
+                                id="invest"
                                 class="w-full bg-gradient-to-r from-zinc-500 to-zinc-600 mx-auto hover:scale-105 px-4 py-1 rounded-lg">Invest in the project</button>
                             </div>
                           </div>
