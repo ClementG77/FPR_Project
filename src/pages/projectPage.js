@@ -1,13 +1,14 @@
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import rocket from '../images/logoPixel.png';
+import Web3 from 'web3/dist/web3.min.js';
 
 
 const projectPage = () => {
 
-  const contractAddress = "";
+  const contractAddress = "0x7B294896Bf857F4f8C6F962494A8eEe9FFED16fc";
 
-  const PresaleAbi = [];
+  const PresaleAbi = [{"inputs":[{"internalType":"contract LCRT","name":"_token","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[],"name":"MAX_SALE_PER_ACCOUNT","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"MAX_SOLD","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"MIN_SALE_PER_ACCOUNT","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"PRICE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"TotalSold","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"activatePublicSale","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"buyLCRT","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"deactivatePublicSale","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"invested","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"isSaleActive","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owners","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"salesStartTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_startTime","type":"uint256"}],"name":"setSalesStartTime","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"sold","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"contract LCRT","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_token","type":"address"}],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"}];
 
   const invest = async () => {
     document.getElementById('invest').className = "hidden";
@@ -15,7 +16,25 @@ const projectPage = () => {
   }
 
   const buy = async () => {
+    try {
+      const { ethereum } = window;
+      const accounts = await ethereum.request({ method: "eth_accounts" });
 
+      if (ethereum) {
+          const web3 = new Web3(Web3.givenProvider);
+          await ethereum.enable();
+          let contract = new web3.eth.Contract(PresaleAbi,contractAddress);
+          let count = document.getElementById('count').value;
+          console.log(count);
+          let countFinal = parseInt(`${count}000000000000000000`, 10) * 0.000001;
+          let buy = await contract.methods.buyLCRT(count).send({
+            from: accounts[0],
+            value: countFinal * 5
+          });
+      }
+  } catch (err) {
+      console.log(err);
+  }
   }
 
   const ContentPage = () => {
@@ -50,8 +69,8 @@ const projectPage = () => {
                             </div>
                             <div class=" relative flex items-center flex-wrap ">
                               <div  id="buy" class=" hidden sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
-                                <input id="number" class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-slate-300 p-4 focus:outline-none bg-transparent placeholder-slate-300" placeholder="Value" required />
-                                <button onClick={buy} class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Buy</button>
+                                <input id="count" type="number" class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-slate-300 p-4 focus:outline-none bg-transparent placeholder-slate-300" placeholder="Value" required />
+                                <button  onClick={buy} class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Buy</button>
                               </div>
                               <button
                                 onClick={invest}

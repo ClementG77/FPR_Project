@@ -1,8 +1,47 @@
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import {Link} from "react-router-dom";
+import Web3 from 'web3/dist/web3.min.js';
 
 const Dashboard = () => {
+    const contractAddress = "0x6C69428f4F4734482cc895FA19E04eA4E063c7bA";
+    let minABI = [
+        // balanceOf
+        {
+          "constant":true,
+          "inputs":[{"name":"_owner","type":"address"}],
+          "name":"balanceOf",
+          "outputs":[{"name":"balance","type":"uint256"}],
+          "type":"function"
+        },
+        // decimals
+        {
+          "constant":true,
+          "inputs":[],
+          "name":"decimals",
+          "outputs":[{"name":"","type":"uint8"}],
+          "type":"function"
+        }
+      ];
+
+    const portfolio = async () => {
+        try {
+            const { ethereum } = window;
+            const accounts = await ethereum.request({ method: "eth_accounts" });
+
+            if (ethereum) {
+                const web3 = new Web3(Web3.givenProvider);
+                await ethereum.enable();
+                let contract = new web3.eth.Contract(minABI,contractAddress);
+                let balance = await contract.methods.balanceOf(accounts[0]).call();
+                balance = (balance / 1000000000000000000).toFixed(2);
+                document.getElementById('balance').innerHTML = "You have "+ balance + " LCRT on your wallet";
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
     const ContentPage = () => {
         return (
             <div class="bg-black">
@@ -17,12 +56,11 @@ const Dashboard = () => {
                                 <div class="flex flex-wrap -m-4">
                                     <div class="p-4 md:w-4/5 mx-auto">
                                         <div
+                                            onClick={portfolio}
                                             class="h-full rounded-xl shadow-cla-blue bg-gray-900 overflow-hidden outline outline-1 outline-purple-900">
                                             <div class="p-6 h-3/5">
-                                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
-                                                </h2>
-                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
-                                                <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Display for portfolio</p>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Launchor Tokens</h1>
+                                                <p id="balance" class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Click for display portfolio</p>
                                             </div>
                                         </div>
                                     </div>
