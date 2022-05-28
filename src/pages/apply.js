@@ -4,11 +4,6 @@ import Navbar from '../components/navbar';
 
 
 const apply = () => {
-
-    // document.getElementById("myAnchor").addEventListener("click", function(event){
-    //     event.preventDefault()
-    //   });
-
   const ContentPage = () => {
     return (
         <div class="bg-black">
@@ -16,7 +11,7 @@ const apply = () => {
           <div class="text-white body-font">
                     <div class="bg-gray-900 mx-16 my-8 shadow rounded-xl p-8 sm:p-12 ">
                         <p class="text-3xl font-bold  underline leading-7 text-center text-white">Form</p>
-                        <form action="" method="post">
+                         <div> {/* change with <form> when the button send is good, and add this : action="" method="post" */}
                             <div class="md:flex items-center mt-12">
                                 <div class="w-full md:w-1/2 flex flex-col">
                                     <label class="font-semibold leading-none text-gray-300">Company Name</label>
@@ -56,9 +51,9 @@ const apply = () => {
                                 </label>
                             </div>
                             <div class="flex items-center justify-center w-full">
-                                <button class="mt-9 font-semibold leading-none text-white py-4 px-10 bg-gray-800 hover:scale-105 hover:bg-black hover:font-bold rounded" onClick="return false">Send Form</button>
+                                <button class="mt-9 font-semibold leading-none text-white py-4 px-10 bg-gray-800 hover:scale-105 hover:bg-black hover:font-bold rounded">Send Form</button>
                             </div>
-                        </form>
+                        </div>
     
           </div>
         </div>

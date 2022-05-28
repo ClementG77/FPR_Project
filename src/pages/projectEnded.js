@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 import rocket from '../images/logoPixel.png';
 
 
-const projectPage = () => {
+const projectEnded = () => {
 
   const contractAddress = "";
 
@@ -24,7 +24,7 @@ const projectPage = () => {
         <div class="bg-black">
           <div class="relative text-white body-font">
             <div class="fixed bottom-0 mx-auto w-full h-12 bg-gray-900 lg:hidden">
-              <button class="w-full h-full bg-gradient-to-r from-zinc-500 to-zinc-600 rounded-lg z-10 ">Invest in the Project</button>
+              <button class="w-full h-full bg-gradient-to-r from-zinc-500 to-zinc-600 rounded-lg z-10 text-2xl font-bold">Swap</button>
             </div>
             <div class="fixed top-16 w-1/3 lg:right-0 z-10 md:py-2 lg:py-2.5">
               <div class="pl-8 flex w-4/5">
@@ -43,20 +43,17 @@ const projectPage = () => {
                             <div class="grid grid-cols-2  mb-4">
                               <div class="text-left">Aim</div>
                               <div class="text-right">20000$</div>
-                              <div class="text-left">Min</div>
-                              <div class="text-right">100$</div>
-                              <div class="text-left">Funds raised</div>
-                              <div class="text-right">10000$</div>
+                              <div class="text-left">Participant</div>
+                              <div class="text-right">512</div>
+                            </div>
+                            <div class="my-4">
+                                <div class="w-full bg-white rounded-full dark:bg-white">
+                                    <div class="bg-purple-900 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"> 100%</div>
+                                </div>
                             </div>
                             <div class=" relative flex items-center flex-wrap ">
-                              <div  id="buy" class=" hidden sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
-                                <input id="number" class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-slate-300 p-4 focus:outline-none bg-transparent placeholder-slate-300" placeholder="Value" required />
-                                <button onClick={buy} class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Buy</button>
-                              </div>
                               <button
-                                onClick={invest}
-                                id="invest"
-                                class="w-full bg-gradient-to-r from-zinc-500 to-zinc-600 mx-auto hover:scale-105 px-4 py-1 rounded-lg">Invest in the project</button>
+                                class="w-full bg-gradient-to-r from-zinc-500 to-zinc-600 mx-auto hover:scale-105 px-4 py-1 rounded-lg">Swap</button>
                             </div>
                           </div>
                         </div>
@@ -136,4 +133,4 @@ const projectPage = () => {
   );
 }
 
-export default projectPage;
+export default projectEnded;
