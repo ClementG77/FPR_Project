@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 
 const main = () => {
 
+  function removedHandler(event:Event) {
+    if (x != null) x.stop();
+}
+
   var myEvent = window.attachEvent || window.addEventListener;
 var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make IE7, IE8 compitable
 

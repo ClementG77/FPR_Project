@@ -29,13 +29,17 @@ const Dashboard = () => {
             const { ethereum } = window;
             const accounts = await ethereum.request({ method: "eth_accounts" });
 
-            if (ethereum) {
+            if (ethereum && accounts.length > 0) {
+                console.log(accounts)
                 const web3 = new Web3(Web3.givenProvider);
                 await ethereum.enable();
                 let contract = new web3.eth.Contract(minABI,contractAddress);
                 let balance = await contract.methods.balanceOf(accounts[0]).call();
                 balance = (balance / 1000000000000000000).toFixed(2);
                 document.getElementById('balance').innerHTML = "You have "+ balance + " LCRT on your wallet";
+            }
+            else{
+                document.getElementById('balance').innerHTML = "Please connect your wallet";
             }
         } catch (err) {
             console.log(err);
@@ -60,7 +64,7 @@ const Dashboard = () => {
                                             class="h-full rounded-xl shadow-cla-blue bg-gray-900 overflow-hidden outline outline-1 outline-purple-900">
                                             <div class="p-6 h-3/5">
                                                 <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Launchor Tokens</h1>
-                                                <p id="balance" class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Click for display portfolio</p>
+                                                <p id="balance" class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Click to display your portfolio</p>
                                             </div>
                                         </div>
                                     </div>
