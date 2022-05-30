@@ -12,7 +12,7 @@ const projectPage = () => {
 
   const invest = async () => {
     document.getElementById('invest').className = "hidden";
-    document.getElementById('buy').className = "visible";
+    document.getElementById('buy').className = "visible mx-auto";
   }
 
   const buy = async () => {
@@ -66,11 +66,13 @@ const projectPage = () => {
                               <div class="text-right">100$</div>
                               <div class="text-left">Funds raised</div>
                               <div class="text-right">10000$</div>
+                              <div class="text-left">Token Price</div>
+                              <div class="text-right">0.001$</div>
                             </div>
                             <div class=" relative flex items-center flex-wrap ">
-                              <div  id="buy" class=" hidden sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
-                                <input id="count" type="number" class="border border-white sm:border-transparent text-base w-full font-medium leading-none text-slate-300 p-4 focus:outline-none bg-transparent placeholder-slate-300" placeholder="Value" required />
-                                <button  onClick={buy} class="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Buy</button>
+                              <div  id="buy" class="mx-auto  hidden sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
+                                <input id="count" type="number" class="my-2 border border-white text-base w-full font-medium leading-none text-slate-300 p-4 focus:outline-none bg-transparent placeholder-slate-300" placeholder="Value" required />
+                                <button  onClick={buy} class="mx-auto focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-stone-700 py-4 px-6 hover:bg-opacity-75">Buy</button>
                               </div>
                               <button
                                 onClick={invest}

@@ -11,7 +11,7 @@ function dropdown(){
 
 const navbar = () => {
     return (
-      <div class="bg-black">
+      <div class="bg-black z-10">
         <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
         <Link class="w-36 " to="/">

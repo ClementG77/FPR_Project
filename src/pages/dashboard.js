@@ -28,11 +28,11 @@ const Dashboard = () => {
         try {
             const { ethereum } = window;
             const accounts = await ethereum.request({ method: "eth_accounts" });
+            const web3 = new Web3(Web3.givenProvider);
+                await ethereum.enable();
 
             if (ethereum && accounts.length > 0) {
                 console.log(accounts)
-                const web3 = new Web3(Web3.givenProvider);
-                await ethereum.enable();
                 let contract = new web3.eth.Contract(minABI,contractAddress);
                 let balance = await contract.methods.balanceOf(accounts[0]).call();
                 balance = (balance / 1000000000000000000).toFixed(2);

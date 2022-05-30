@@ -5,17 +5,6 @@ import { Link } from "react-router-dom";
 
 const main = () => {
 
-  function removedHandler(event:Event) {
-    if (x != null) x.stop();
-}
-
-  var myEvent = window.attachEvent || window.addEventListener;
-var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make IE7, IE8 compitable
-
-            myEvent(chkevent, function(e) { // For >=IE7, Chrome, Firefox
-                stop()
-            });
-
   function stop(){
     clearInterval(x);   
   }
@@ -57,9 +46,6 @@ var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make 
     }
   }, 1000);
 
-  window.onunload = function() {
-    alert('Bye.');
-}
   const ContentPage = () => {
     return (
       <div class="bg-black">
@@ -88,7 +74,7 @@ var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make 
               </div>
             </div>
           </div>
-          <div class="px-6 py-6 2xl:container">
+          <div class=" mx-auto my-auto px-6 py-6 2xl:container">
                         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                             <div class="md:col-span-2 lg:col-span-1">
                                 <div class="py-8 px-6 space-y-6 rounded-xl border border-purple-900 bg-gray-900">
@@ -286,7 +272,7 @@ var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make 
 
   return (
     <div class="bg-blue">
-      <Navbar />
+      <Navbar onClick={stop} />
       <ContentPage />
       <Footer />
     </div>
