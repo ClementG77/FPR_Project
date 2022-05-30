@@ -68,7 +68,7 @@ const main = () => {
                 </main>
               </div>
               <div class="animate-wiggle lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img class="  h-96 w-96 object-cover mx-auto my-12 "
+                <img class=" rotate-45 h-96 w-96 object-cover mx-auto my-12 "
                   src={rocket}
                   alt=""></img>
               </div>

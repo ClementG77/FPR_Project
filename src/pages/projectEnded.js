@@ -24,7 +24,7 @@ const projectEnded = () => {
         <div class="bg-black">
           <div class="relative text-white body-font">
             <div class="fixed bottom-0 mx-auto w-full h-12 bg-gray-900 lg:hidden">
-              <button class="w-full h-full bg-gradient-to-r from-zinc-500 to-zinc-600 rounded-lg z-10 text-2xl font-bold">Swap</button>
+              <button class="w-full h-full bg-gradient-to-r from-zinc-500 to-zinc-600 rounded-lg z-10 text-2xl font-bold">Trade</button>
             </div>
             <div class="fixed top-16 w-1/3 lg:right-0 z-10 md:py-2 lg:py-2.5">
               <div class="pl-8 flex w-4/5">
@@ -53,7 +53,7 @@ const projectEnded = () => {
                             </div>
                             <div class=" relative flex items-center flex-wrap ">
                               <button
-                                class="w-full bg-gradient-to-r from-zinc-500 to-zinc-600 mx-auto hover:scale-105 px-4 py-1 rounded-lg">Swap</button>
+                                class="w-full bg-gradient-to-r from-zinc-500 to-zinc-600 mx-auto hover:scale-105 px-4 py-1 rounded-lg">Trade</button>
                             </div>
                           </div>
                         </div>
