@@ -52,7 +52,7 @@ const Dashboard = () => {
                 <div class="text-white body-font">
                     <div class="border-b container px-10 py-10 mx-auto">
                         <div class="flex">
-                            <h1 class="text-2xl tracking-tight font-bold px-10 text-purple-900 sm:text-3xl md:text-4xl">Your Portfolio
+                            <h1 class="text-2xl tracking-tight font-bold px-10 sm:text-3xl md:text-4xl">Your Portfolio
                             </h1>
                         </div>
                         <section class="text-white body-font">
@@ -101,7 +101,7 @@ const Dashboard = () => {
                                                         <td class="px-6 py-4 whitespace-no-wrap border-b border-black">
                                                             <div class="flex items-center">
                                                                 <div class="ml-4">
-                                                                    <div class="text-sm leading-5 font-medium text-white">Example Title
+                                                                    <div class="text-sm leading-5 font-medium text-white">Quokkafe
                                                                     </div>
                                                                 </div>
                                                             </div>

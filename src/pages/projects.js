@@ -1,5 +1,6 @@
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
+import quokka from '../images/quokka/IMG_0795.jpg';
 import { Link } from "react-router-dom";
 
 
@@ -38,7 +39,7 @@ const projects = () => {
                     </div>
                     <div class="border-t border-b container px-10 py-10 mx-auto">
                         <div class="flex">
-                            <h1 class="text-2xl tracking-tight font-bold px-10 text-purple-900 sm:text-3xl md:text-4xl">Current Projects
+                            <h1 class="text-2xl tracking-tight font-bold px-10 sm:text-3xl md:text-4xl">Current Projects
                             </h1>
                         </div>
                         <section class="text-white body-font">
@@ -48,17 +49,17 @@ const projects = () => {
                                         <div class="h-full rounded-xl shadow-cla-blue bg-gray-900 overflow-hidden outline outline-1 outline-purple-900">
                                             <img
                                                 class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
-                                                src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+                                                src={quokka}
                                                 alt="blog"></img>
                                             <div class="p-6 h-4/6">
                                                 <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
                                                 </h2>
-                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Quokkafe</h1>
                                                 <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">Lorem ipsum dolor sit amet, consectetur adipiscing
                                                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
                                                 <div class="relative flex items-center flex-wrap ">
-                                                    <Link to="/projectPage"
+                                                    <Link to="/projectPageQuokka"
                                                         class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</Link>
                                                     <div class="absolute right-0 font-bold">Aim : 20000$</div>
                                                 </div>
@@ -85,8 +86,8 @@ const projects = () => {
                                                 <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">Photo booth fam kinfolk cold-pressed sriracha
                                                     leggings jianbing microdosing tousled waistcoat.</p>
                                                 <div class="relative flex items-center flex-wrap">
-                                                    <button
-                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg">Project</button>
+                                                <Link to="/projectPage"
+                                                        class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</Link>
                                                     <div class="absolute right-0 font-bold">Aim : 5000$</div>
                                                 </div>
                                                 <div class="m-1">Time left: <span class="float-right">Add time</span></div>
@@ -130,7 +131,7 @@ const projects = () => {
                     </div>
                     <div class="border-b container px-10 py-10 mx-auto">
                         <div class="flex">
-                            <h1 class="text-2xl tracking-tight font-bold px-10 text-purple-900 sm:text-3xl md:text-4xl">Upcomming Projects
+                            <h1 class="text-2xl tracking-tight font-bold px-10 sm:text-3xl md:text-4xl">Upcomming Projects
                             </h1>
                         </div>
                         <section class="text-white body-font">
@@ -223,7 +224,7 @@ const projects = () => {
                     </div>
                     <div class="border-b container px-10 py-10 mx-auto">
                         <div class="flex">
-                            <h1 class="text-2xl tracking-tight font-bold px-10 text-purple-900 sm:text-3xl md:text-4xl">Ended Projects</h1>
+                            <h1 class="text-2xl tracking-tight font-bold px-10 sm:text-3xl md:text-4xl">Ended Projects</h1>
                         </div>
                         <section class="text-white body-font">
                             <div class="container px-5 py-10 mx-auto">

@@ -1,6 +1,10 @@
-import Footer from '../components/footer';
-import Navbar from '../components/navbar';
-import rocket from '../images/logoPixel.png';
+import Footer from '../../components/footer';
+import Navbar from '../../components/navbar';
+import rocket from '../../images/logoPixel.png';
+import quokka from '../../images/quokka/IMG_0795.jpg';
+import quokkaimage from '../../images/quokka/IMG_0819.jpg';
+import quokkaimage1 from '../../images/quokka/IMG_0820.jpg';
+import quokkalogo from '../../images/quokka/quokkalogo.png';
 import Web3 from 'web3/dist/web3.min.js';
 
 
@@ -55,10 +59,10 @@ const projectPage = () => {
                           class="rounded-xl shadow-cla-blue bg-gray-900 overflow-hidden outline outline-1 outline-purple-900">
                           <img
                             class="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
-                            src="https://images.unsplash.com/photo-1624628639856-100bf817fd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8M2QlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                            src={quokka}
                             alt="blog"></img>
                           <div class="p-6 h-full">
-                            <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Project Title</h1>
+                            <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Quokkafe</h1>
                             <div class="grid grid-cols-2  mb-4">
                               <div class="text-left">Aim</div>
                               <div class="text-right">20000$</div>
@@ -95,26 +99,57 @@ const projectPage = () => {
                   </div>
                   <div class="flex flex-wrap text-justify">
                     <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Title</h1>
-                    <p class="leading-relaxed mb-2 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                    <div class="grid grid-cols-5 flex-col">
+                      <div class="col-span-5 md:col-span-4 sm:col-span-5">
+                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
+                        </p>
+                      </div>
+                      <div class="col-span-5 mx-auto md:col-span-1">
+                        <img src={quokkalogo} class="object-contain w-32 " alt="logo"></img>
+                      </div>
+                    </div>
                     <p class="border-dashed border-t-2 border-purple-900 leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
                       <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Title</h1>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                      <div class="grid grid-cols-5 flex-col">
+                      <div class="col-span-5 m-auto p-1 md:col-span-2">
+                        <img src={quokka} class="object-cover" alt="logo"></img>
+                      </div>
+                      <div class="col-span-5 md:col-span-3 sm:col-span-4">
+                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
+                        </p>
+                      </div>
+                      
+                    </div></p>
                     <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
                       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
                     <p class="border-dashed border-t-2 border-purple-900 leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
                       <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Title</h1>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      <div class="grid grid-cols-5 flex-col">
+                      <div class="col-span-5 mx-auto md:col-span-1 p-2">
+                        <img src={quokkaimage1} class="object-cover" alt="Launchor"></img>
+                      </div>
+                      <div class="col-span-5 m-auto md:col-span-4 sm:col-span-5">
+                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
                       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
+                        </p>
+                      </div>                      
+                    </div>
+                      </p>
                     <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
                       elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
@@ -132,8 +167,8 @@ const projectPage = () => {
                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
                         </p>
                       </div>
-                      <div class="col-span-5 mx-auto md:col-span-1">
-                        <img src={rocket} class="object-contain w-32 " alt="Launchor"></img>
+                      <div class="col-span-5 mx-auto md:col-span-1 p-2">
+                        <img src={quokkaimage} class="object-cover" alt="Launchor"></img>
                       </div>
 
                     </div>
