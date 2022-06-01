@@ -5,6 +5,7 @@ import Web3 from 'web3/dist/web3.min.js';
 
 const Dashboard = () => {
     const contractAddress = "0x6C69428f4F4734482cc895FA19E04eA4E063c7bA";
+    const QKFTAddress = "0x7e1Cad02cDF015B43eb204892e817C750ee22374";
     let minABI = [
         // balanceOf
         {
@@ -36,7 +37,11 @@ const Dashboard = () => {
                 let contract = new web3.eth.Contract(minABI,contractAddress);
                 let balance = await contract.methods.balanceOf(accounts[0]).call();
                 balance = (balance / 1000000000000000000).toFixed(2);
-                document.getElementById('balance').innerHTML = "You have "+ balance + " LCRT on your wallet";
+                document.getElementById('balance1').innerHTML = "You have "+ balance + " LCRT on your wallet";
+                let contract2 = new web3.eth.Contract(minABI,QKFTAddress);
+                let balance2 = await contract2.methods.balanceOf(accounts[0]).call();
+                balance2 = (balance2 / 1000000000000000000).toFixed(2);
+                document.getElementById('balance2').innerHTML = "You have "+ balance2 + " QKFT on your wallet";
             }
             else{
                 document.getElementById('balance').innerHTML = "Please connect your wallet";
@@ -63,8 +68,14 @@ const Dashboard = () => {
                                             onClick={portfolio}
                                             class="h-full rounded-xl shadow-cla-blue bg-gray-900 overflow-hidden outline outline-1 outline-purple-900">
                                             <div class="p-6 h-3/5">
-                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Launchor Tokens</h1>
-                                                <p id="balance" class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Click to display your portfolio</p>
+                                                <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Click to display your portfolio</h1>
+                                                <div>
+                                                    <p id="balance1" class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5"> </p>
+                                                </div>
+                                                <div>
+                                                    <p id="balance2" class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5"> </p>
+                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
