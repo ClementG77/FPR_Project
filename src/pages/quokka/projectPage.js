@@ -98,16 +98,14 @@ const projectPage = () => {
                     <h1 class="text-2xl tracking-tight font-bold underline mx-auto pb-5 text-white sm:text-3xl md:text-4xl">Project Presentation</h1>
                   </div>
                   <div class="flex flex-wrap text-justify">
-                    <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Title</h1>
+                    <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Purpose of the project</h1>
                     <div class="grid grid-cols-5 flex-col">
                       <div class="col-span-5 md:col-span-4 sm:col-span-5">
-                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
+                        <p class="leading-relaxed mb-2 lg:h-3/5 md:h-4/5">
+                        In a society where contact is less and less physical since the appearance of the internet, it’s important to create new ways 
+                        in order to maintain the human contact and the interaction between people. For this reason, the team thought about 
+                        creating a place, unique and innovative where peers can meet and share moments around a coffee. In this way the creation
+                        of links will be facilitated and people will get along more easily.
                         </p>
                       </div>
                       <div class="col-span-5 mx-auto md:col-span-1">
@@ -115,26 +113,15 @@ const projectPage = () => {
                       </div>
                     </div>
                     <p class="border-dashed border-t-2 border-purple-900 leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
-                      <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Title</h1>
-                      <div class="grid grid-cols-5 flex-col">
-                      <div class="col-span-5 m-auto p-1 md:col-span-2">
-                        <img src={quokka} class="object-cover" alt="logo"></img>
-                      </div>
-                      <div class="col-span-5 md:col-span-3 sm:col-span-4">
-                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
-                        </p>
-                      </div>
-                      
-                    </div></p>
-                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                      <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Idea behind the project</h1>
+                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">The idea behind this multifuncional place is that people are free to come and spend time there as they want, 
+                        by playing games, drinking coffee, listening to live music, participating in events…
+                        The place has been chosen carefully. Indeed Copenhagen and therefore Denmark are into the Hygge culture. 
+                        This culture encourages spending time with peers by talking, playing, drinking etc in a warm and intimate 
+                        environment. Moreover, the Danish consume a lot of coffee and the concept of ambiente cafe is popular in the 
+                        capital.
+                        All the elements bring the team to conclude that the Quokkafe concept will totally fit into Danish culture, 
+                        even more considering that the Danish are really into digital stuff ( e.g. Mobilepay)</p></p>
                     <p class="border-dashed border-t-2 border-purple-900 leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
                       <h1 class="text-xl tracking-tight font-bold text-purple-900 pb-2 text-white">Title</h1>
                       <div class="grid grid-cols-5 flex-col">
@@ -143,35 +130,16 @@ const projectPage = () => {
                       </div>
                       <div class="col-span-5 m-auto md:col-span-4 sm:col-span-5">
                         <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
+                        However, since the market is really attractive, Quokkafe is exposed to a lot of competitors with similar 
+                        concepts. For this reason, the company decided to differentiate themself thanks to an innovative application 
+                        which will be used to go to the cafe. This application allows the customers to personalize his experience in 
+                        the cafe and therefore optimize his visit.
+                        Finally, the company believes that this concept has a big potential and if the application and the development 
+                        are well managed, the Quokaffe will definitely be a success.
                         </p>
                       </div>                      
                     </div>
                       </p>
-                    <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
-                    <div class="grid grid-cols-5 flex-col">
-                      <div class="col-span-5 md:col-span-4 sm:col-span-5">
-                        <p class="leading-relaxed mb-1 lg:h-3/5 md:h-4/5">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.
-                        </p>
-                      </div>
-                      <div class="col-span-5 mx-auto md:col-span-1 p-2">
-                        <img src={quokkaimage} class="object-cover" alt="Launchor"></img>
-                      </div>
-
-                    </div>
                   </div>
                 </div>
               </section>

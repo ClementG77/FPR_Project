@@ -23,7 +23,7 @@ const projects = () => {
                                 <div class="py-8 px-6 space-y-6 rounded-xl border border-purple-900 bg-gray-900">
                                     <h5 class="text-xl text-white text-center">Funds raised</h5>
                                     <div class="mt-2 flex justify-center gap-4">
-                                        <h3 class="text-3xl font-bold text-white">$150 000</h3>
+                                        <h3 class="text-3xl font-bold text-white">$82 846 681</h3>
                                     </div>
                                 </div>
                             </div>
@@ -55,9 +55,9 @@ const projects = () => {
                                                 <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
                                                 </h2>
                                                 <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Quokkafe</h1>
-                                                <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                                                <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">In a society where contact is less and less physical since 
+                                                the appearance of the internet, it’s important to create new ways in order to maintain the human contact and 
+                                                the interaction between people.</p>
                                                 <div class="relative flex items-center flex-wrap ">
                                                     <Link to="/projectPageQuokka"
                                                         class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</Link>

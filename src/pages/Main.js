@@ -1,6 +1,7 @@
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import rocket from '../images/logoPixel.png';
+import token from '../images/token.png';
 import quokka from '../images/quokka/IMG_0795.jpg';
 import { Link } from "react-router-dom";
 
@@ -23,7 +24,7 @@ const main = () => {
     console.log(email);
   }
 
-  var countDownDate = new Date("June 2, 2022 13:00:00").getTime();
+  var countDownDate = new Date("June 28, 2022 13:00:00").getTime();
   var countDownDatequokka = new Date("June 30, 2022 13:00:00").getTime();
   var x = setInterval(function () {
     var now = new Date().getTime();
@@ -64,19 +65,17 @@ const main = () => {
                 <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                   <div class="sm:text-center lg:text-left">
                     <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                      <span class="block xl:inline">Invest in projects </span>
-                      <span class="block text-purple-900	xl:inline">from Start-up</span>
+                      <span class="block xl:inline">Invest now in the </span><br></br>
+                      <span class="block text-purple-900	xl:inline"> futur of tomorrow.</span>
                     </h1>
                     <p
-                      class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat.</p>
+                      class="mt-3 text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                      Participate in the launch of innovative and creative projects, let's create the futur together !</p>
                   </div>
                 </main>
               </div>
               <div class="animate-wiggle lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img class=" rotate-45 h-96 w-96 object-cover mx-auto my-12 "
+                <img class=" rotate-45 h-80 w-80 object-cover mx-auto my-12 "
                   src={rocket}
                   alt=""></img>
               </div>
@@ -96,7 +95,7 @@ const main = () => {
                                 <div class="py-8 px-6 space-y-6 rounded-xl border border-purple-900 bg-gray-900">
                                     <h5 class="text-xl text-white text-center">Funds raised</h5>
                                     <div class="mt-2 flex justify-center gap-4">
-                                        <h3 class="text-3xl font-bold text-white">$150 000</h3>
+                                        <h3 class="text-3xl font-bold text-white">$82 846 681</h3>
                                     </div>
                                 </div>
                             </div>
@@ -127,9 +126,9 @@ const main = () => {
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-300 mb-1">Project Description
                         </h2>
                         <h1 class="title-font text-lg font-medium text-slat-200 mb-3">Quokkafe</h1>
-                        <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea enim commodo consequat.</p>
+                        <p class="leading-relaxed mb-6 lg:h-2/5 md:h-3/5">In a society where contact is less and less physical since 
+                        the appearance of the internet, it’s important to create new ways in order to maintain the human contact and 
+                        the interaction between people. </p>
                         <div class="relative flex items-center flex-wrap ">
                           <Link to="/projectPageQuokka"
                             class="bg-gradient-to-r from-zinc-500 to-zinc-600 hover:scale-105 drop-shadow-md  px-4 py-1 rounded-lg">Project</Link>
@@ -218,9 +217,9 @@ const main = () => {
             </div>
             <div class="h-full rounded-xl shadow-cla-blue bg-gradient-to-r from-black to-zinc-700 mb-10">
               <div class="relative overflow-hidden">
-                <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                  <img class="h-56 rounded-xl w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+                <div class="animate-wiggle h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                  <img class="py-5 h-56 rounded-xl object-fill m-auto sm:h-72 md:h-96 lg:h-full"
+                    src={token}
                     alt=""></img>
                 </div>
                 <div class="relative z-10 pb-8 sm:pb-2 md:pb-4 lg:max-w-2xl lg:w-full lg:pb-8 xl:pb-10">
@@ -240,7 +239,7 @@ const main = () => {
                           Ownership of 1% of the value of each launch in stablecoins.</li>
                         <li
                           class="mt-1 text-base text-gray-300">
-                          Ownership of approximately 1% of the tokens of each Launchor company </li>
+                          Ownership of approximately 1% of the tokens of each Launchor company. </li>
                         <li
                           class="mt-1 text-base text-gray-300">
                           Collects 1% of the profits of each company launched.</li>
